@@ -11,6 +11,10 @@ on:
 concurrency:
   group: main
 
+# 关键修复：给 Actions 写权限，否则 git push 会报 exit code 128
+permissions:
+  contents: write
+
 jobs:
   update-sources:
     runs-on: ubuntu-latest
