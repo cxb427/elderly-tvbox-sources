@@ -1,0 +1,158 @@
+{
+  "_meta": {
+    "generated_at": "2026-10-23 10:26:46",
+    "total_sources": 8,
+    "note": "老年影视专用 - 每天自动更新"
+  },
+  "sites": [
+    {
+      "key": "番茄资源",
+      "name": "番茄资源(切)",
+      "api": "http://api.fqzy.cc/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "https://dp.fqplayer.com/dplayer/?url=",
+      "ext": ""
+    },
+    {
+      "key": "量子资源",
+      "name": "量子资源(切)",
+      "api": "http://cj.lziapi.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
+    {
+      "key": "新浪资源",
+      "name": "新浪资源(切)",
+      "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
+    {
+      "key": "光速资源",
+      "name": "光速资源(切)",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
+    {
+      "key": "FOX资源",
+      "name": "FOX资源(切)",
+      "api": "https://api.foxzyapi.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
+    {
+      "key": "卧龙资源",
+      "name": "卧龙资源(切)",
+      "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
+    {
+      "key": "速更资源",
+      "name": "速更资源(切)",
+      "api": "https://sugengzy.cn/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
+    {
+      "key": "百度资源",
+      "name": "百度资源(切)",
+      "api": "https://api.apibdzy.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    }
+  ],
+  "lives": [
+    {
+      "group": "CCTV直播",
+      "channels": [
+        {
+          "name": "CCTV1综合",
+          "urls": [
+            "https://live.cctv.com/live/cctv1.m3u8"
+          ]
+        },
+        {
+          "name": "CCTV2财经",
+          "urls": [
+            "https://live.cctv.com/live/cctv2.m3u8"
+          ]
+        },
+        {
+          "name": "CCTV3综艺",
+          "urls": [
+            "https://live.cctv.com/live/cctv3.m3u8"
+          ]
+        },
+        {
+          "name": "CCTV4中文国际",
+          "urls": [
+            "https://live.cctv.com/live/cctv4.m3u8"
+          ]
+        },
+        {
+          "name": "CCTV5体育",
+          "urls": [
+            "https://live.cctv.com/live/cctv5.m3u8"
+          ]
+        },
+        {
+          "name": "CCTV6电影",
+          "urls": [
+            "https://live.cctv.com/live/cctv6.m3u8"
+          ]
+        },
+        {
+          "name": "CCTV7国防军事",
+          "urls": [
+            "https://live.cctv.com/live/cctv7.m3u8"
+          ]
+        },
+        {
+          "name": "CCTV8电视剧",
+          "urls": [
+            "https://live.cctv.com/live/cctv8.m3u8"
+          ]
+        },
+        {
+          "name": "CCTV13新闻",
+          "urls": [
+            "https://live.cctv.com/live/cctv13.m3u8"
+          ]
+        }
+      ]
+    }
+  ]
+}

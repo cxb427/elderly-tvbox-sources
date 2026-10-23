@@ -1,0 +1,80 @@
+name: Daily TVBox Sources Update
+
+# 定时触发：每天凌晨 3:00（UTC+8 = 北京时间）
+on:
+  schedule:
+    - cron: "0 19 * * *"   # UTC 19:00 = 北京时间次日 03:00
+  # 手动触发（在 GitHub Actions 页面点 Run workflow）
+  workflow_dispatch:
+
+# 仅在 main 分支上执行
+concurrency:
+  group: main
+
+jobs:
+  update-sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10      # 脚本很轻量，10 分钟完全够用
+
+    steps:
+      # 1. 拉取仓库代码
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. 设置 Python 3.11
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: |
+          pip install httpx
+
+      # 4. 执行合并脚本
+      - name: Run merge_sources.py
+        run: |
+          python scripts/merge_sources.py
+        # 就算全挂了也别让 Actions 红，我们脚本内部有兜底
+        continue-on-error: false
+
+      # 5. 检查输出是否变化（没变化就不 commit）
+      - name: Check for changes
+        id: git-diff
+        run: |
+          if git diff --exit-code sources/latest.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "latest.json 没有变化，跳过 commit"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "latest.json 有更新，准备提交"
+          fi
+
+      # 6. 提交并推送
+      - name: Commit & Push
+        if: steps.git-diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sources/latest.json
+          git commit -m "🤖 自动更新 TVBox 源 $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push origin main
+
+      # 7. 打印结果摘要
+      - name: Summary
+        run: |
+          echo "=== latest.json 摘要 ==="
+          python -c "
+          import json
+          with open('sources/latest.json') as f:
+              d = json.load(f)
+          m = d['_meta']
+          print(f'生成时间: {m[\"generated_at\"]}')
+          print(f'可用源数: {m[\"total_sources\"]}')
+          print()
+          print('TOP 5 最快源:')
+          for i, s in enumerate(d['sites'][:5], 1):
+              print(f'  {i}. {s[\"name\"]} → {s[\"api\"][:70]}...')
+          "
