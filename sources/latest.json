@@ -1,21 +1,10 @@
 {
   "_meta": {
-    "generated_at": "2026-10-24 19:16:10",
+    "generated_at": "2026-10-25 19:16:45",
     "total_sources": 7,
     "note": "老年影视专用 - 每天自动更新"
   },
   "sites": [
-    {
-      "key": "光速资源",
-      "name": "光速资源(切)",
-      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-      "type": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "playUrl": "",
-      "ext": ""
-    },
     {
       "key": "番茄资源",
       "name": "番茄资源(切)",
@@ -50,6 +39,28 @@
       "ext": ""
     },
     {
+      "key": "光速资源",
+      "name": "光速资源(切)",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
+    {
+      "key": "快播资源",
+      "name": "快播资源(切)",
+      "api": "http://www.kuaibozy.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
+    {
       "key": "卧龙资源",
       "name": "卧龙资源(切)",
       "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
@@ -64,17 +75,6 @@
       "key": "速更资源",
       "name": "速更资源(切)",
       "api": "https://sugengzy.cn/api.php/provide/vod/",
-      "type": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "playUrl": "",
-      "ext": ""
-    },
-    {
-      "key": "快播资源",
-      "name": "快播资源(切)",
-      "api": "http://www.kuaibozy.com/api.php/provide/vod/",
       "type": 1,
       "searchable": 1,
       "quickSearch": 1,
