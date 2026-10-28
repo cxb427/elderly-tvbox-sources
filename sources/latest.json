@@ -1,21 +1,10 @@
 {
   "_meta": {
-    "generated_at": "2026-10-27 19:32:12",
+    "generated_at": "2026-10-28 19:34:58",
     "total_sources": 7,
     "note": "老年影视专用 - 每天自动更新"
   },
   "sites": [
-    {
-      "key": "新浪资源",
-      "name": "新浪资源(切)",
-      "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-      "type": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "playUrl": "",
-      "ext": ""
-    },
     {
       "key": "番茄资源",
       "name": "番茄资源(切)",
@@ -28,9 +17,20 @@
       "ext": ""
     },
     {
-      "key": "快播资源",
-      "name": "快播资源(切)",
-      "api": "http://www.kuaibozy.com/api.php/provide/vod/",
+      "key": "量子资源",
+      "name": "量子资源(切)",
+      "api": "http://cj.lziapi.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
+    {
+      "key": "新浪资源",
+      "name": "新浪资源(切)",
+      "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/",
       "type": 1,
       "searchable": 1,
       "quickSearch": 1,
@@ -50,20 +50,9 @@
       "ext": ""
     },
     {
-      "key": "量子资源",
-      "name": "量子资源(切)",
-      "api": "http://cj.lziapi.com/api.php/provide/vod/",
-      "type": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "playUrl": "",
-      "ext": ""
-    },
-    {
-      "key": "卧龙资源",
-      "name": "卧龙资源(切)",
-      "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
+      "key": "快播资源",
+      "name": "快播资源(切)",
+      "api": "http://www.kuaibozy.com/api.php/provide/vod/",
       "type": 1,
       "searchable": 1,
       "quickSearch": 1,
@@ -75,6 +64,17 @@
       "key": "速更资源",
       "name": "速更资源(切)",
       "api": "https://sugengzy.cn/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
+    {
+      "key": "卧龙资源",
+      "name": "卧龙资源(切)",
+      "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
       "type": 1,
       "searchable": 1,
       "quickSearch": 1,
