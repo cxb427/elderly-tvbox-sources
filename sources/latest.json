@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated_at": "2026-11-06 19:41:37",
+    "generated_at": "2026-11-07 19:29:52",
     "total_sources": 6,
     "note": "老年影视专用 - 每天自动更新"
   },
@@ -39,6 +39,17 @@
       "ext": ""
     },
     {
+      "key": "卧龙资源",
+      "name": "卧龙资源(切)",
+      "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
+    {
       "key": "速更资源",
       "name": "速更资源(切)",
       "api": "https://sugengzy.cn/api.php/provide/vod/",
@@ -53,17 +64,6 @@
       "key": "量子资源",
       "name": "量子资源(切)",
       "api": "http://cj.lziapi.com/api.php/provide/vod/",
-      "type": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "playUrl": "",
-      "ext": ""
-    },
-    {
-      "key": "卧龙资源",
-      "name": "卧龙资源(切)",
-      "api": "https://collect.wolongzyw.com/api.php/provide/vod/",
       "type": 1,
       "searchable": 1,
       "quickSearch": 1,
