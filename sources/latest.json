@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated_at": "2026-11-14 19:31:12",
+    "generated_at": "2026-11-15 19:32:33",
     "total_sources": 6,
     "note": "老年影视专用 - 每天自动更新"
   },
@@ -17,9 +17,9 @@
       "ext": ""
     },
     {
-      "key": "光速资源",
-      "name": "光速资源(切)",
-      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "key": "新浪资源",
+      "name": "新浪资源(切)",
+      "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/",
       "type": 1,
       "searchable": 1,
       "quickSearch": 1,
@@ -28,9 +28,9 @@
       "ext": ""
     },
     {
-      "key": "新浪资源",
-      "name": "新浪资源(切)",
-      "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+      "key": "光速资源",
+      "name": "光速资源(切)",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
       "type": 1,
       "searchable": 1,
       "quickSearch": 1,
