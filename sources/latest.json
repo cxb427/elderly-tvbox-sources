@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "generated_at": "2026-11-17 19:53:15",
-    "total_sources": 6,
+    "generated_at": "2026-11-18 19:46:37",
+    "total_sources": 5,
     "note": "老年影视专用 - 每天自动更新"
   },
   "sites": [
@@ -14,17 +14,6 @@
       "quickSearch": 1,
       "filterable": 0,
       "playUrl": "https://dp.fqplayer.com/dplayer/?url=",
-      "ext": ""
-    },
-    {
-      "key": "光速资源",
-      "name": "光速资源(切)",
-      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-      "type": 1,
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "playUrl": "",
       "ext": ""
     },
     {
