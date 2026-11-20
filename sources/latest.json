@@ -1,10 +1,21 @@
 {
   "_meta": {
-    "generated_at": "2026-11-19 19:52:39",
-    "total_sources": 5,
+    "generated_at": "2026-11-20 19:49:30",
+    "total_sources": 7,
     "note": "老年影视专用 - 每天自动更新"
   },
   "sites": [
+    {
+      "key": "FOX资源",
+      "name": "FOX资源(切)",
+      "api": "https://api.foxzyapi.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
+      "ext": ""
+    },
     {
       "key": "番茄资源",
       "name": "番茄资源(切)",
@@ -14,6 +25,17 @@
       "quickSearch": 1,
       "filterable": 0,
       "playUrl": "https://dp.fqplayer.com/dplayer/?url=",
+      "ext": ""
+    },
+    {
+      "key": "光速资源",
+      "name": "光速资源(切)",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "type": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "playUrl": "",
       "ext": ""
     },
     {
